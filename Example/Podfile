@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LRTSAlertView_Example' do
+  pod 'LRTSAlertView', :path => '../'
+
+  target 'LRTSAlertView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
