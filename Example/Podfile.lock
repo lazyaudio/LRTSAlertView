@@ -1,0 +1,16 @@
+PODS:
+  - LRTSAlertView (0.1.0)
+
+DEPENDENCIES:
+  - LRTSAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  LRTSAlertView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LRTSAlertView: 94362185ab3c906ef1a4ea3cb1cb775791fa041d
+
+PODFILE CHECKSUM: 29ebb130b6df398e60a970200bbb7956275e451f
+
+COCOAPODS: 1.2.1

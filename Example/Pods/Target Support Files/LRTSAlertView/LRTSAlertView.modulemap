@@ -1,0 +1,6 @@
+framework module LRTSAlertView {
+  umbrella header "LRTSAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}

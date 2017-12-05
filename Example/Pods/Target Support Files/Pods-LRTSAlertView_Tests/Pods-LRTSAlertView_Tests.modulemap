@@ -1,0 +1,6 @@
+framework module Pods_LRTSAlertView_Tests {
+  umbrella header "Pods-LRTSAlertView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

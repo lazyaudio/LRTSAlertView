@@ -3,6 +3,8 @@ use_frameworks!
 target 'LRTSAlertView_Example' do
   pod 'LRTSAlertView', :path => '../'
 
+#  pod 'SLBottomToastView', '~> 0.0.1'
+
   target 'LRTSAlertView_Tests' do
     inherit! :search_paths
 
