@@ -31,10 +31,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'LRTSAlertView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'LRTSAlertView' => ['LRTSAlertView/Assets/*.png']
-  # }
+
+  s.resources = 'LRTSAlertView/LRTSAlertView.bundle'
+
+# s.resource_bundles = {
+#  'LRTSAlertView' => ['LRTSAlertView/Assets/*.png']
+# }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

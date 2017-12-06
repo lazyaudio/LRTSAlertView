@@ -17,12 +17,9 @@
 
 - (void)receiveRedPacketOrListenTicketTouchEvent;
 
-- (void)closeAlterViewTouchEvent;
-
 @end
 
 @interface LRTSBuyShowView : UIView
 
-@property (nonatomic, weak) id<LRTSAlertViewTochEventsDelegate> delegate;
 
 @end

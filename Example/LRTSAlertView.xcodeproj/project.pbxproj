@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160E5E001FD795ED00D41F30 /* LRTSAlertView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 96D6F93525C2073AB72615DE /* LRTSAlertView.podspec */; };
+		160E5E031FD796E100D41F30 /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = 160E5E021FD796E100D41F30 /* abc.png */; };
+		160E5E0C1FD7996400D41F30 /* LRTSAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160E5E0D1FD7996400D41F30 /* LRTSAlertView.framework */; };
+		4A2EE8D078A4D3703532AC46 /* Pods_LRTSAlertView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0444492F689E3C984144AD /* Pods_LRTSAlertView_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +27,6 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A93A03E7B92C53DFC76F1347 /* Pods_LRTSAlertView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CE6A8346097FB3B86F3823 /* Pods_LRTSAlertView_Tests.framework */; };
-		F540E16C1BD1F08910D7ABB1 /* Pods_LRTSAlertView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0444492F689E3C984144AD /* Pods_LRTSAlertView_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,8 @@
 		0888FCE0D97C12D6EBB1219E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		122F511C5D14AB9D784EE58A /* Pods-LRTSAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSAlertView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSAlertView_Example/Pods-LRTSAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		12CE6A8346097FB3B86F3823 /* Pods_LRTSAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRTSAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		160E5E021FD796E100D41F30 /* abc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc.png; sourceTree = "<group>"; };
+		160E5E0D1FD7996400D41F30 /* LRTSAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LRTSAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0319B24B3BE9A7F9E10680 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LRTSAlertView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRTSAlertView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,10 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E5E0C1FD7996400D41F30 /* LRTSAlertView.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F540E16C1BD1F08910D7ABB1 /* Pods_LRTSAlertView_Example.framework in Frameworks */,
+				4A2EE8D078A4D3703532AC46 /* Pods_LRTSAlertView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +125,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				160E5E0D1FD7996400D41F30 /* LRTSAlertView.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -132,6 +139,7 @@
 		6003F593195388D20070C39A /* Example for LRTSAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				160E5E021FD796E100D41F30 /* abc.png */,
 				6003F59C195388D20070C39A /* LRTSAppDelegate.h */,
 				6003F59D195388D20070C39A /* LRTSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -279,10 +287,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E5E001FD795ED00D41F30 /* LRTSAlertView.podspec in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				160E5E031FD796E100D41F30 /* abc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
