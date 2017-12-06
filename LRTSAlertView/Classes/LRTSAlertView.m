@@ -33,7 +33,7 @@
         _contentView = [[UIView alloc] init];
     }
     _contentView.frame = self.overlayView.frame;
-    _contentView.backgroundColor = [UIColor clearColor];
+    _contentView.backgroundColor = LRTSCOLORUTILS(0, 0, 0, 0.42);
     return _contentView;
 }
 
@@ -44,6 +44,9 @@
         CGFloat width = WIDTH_LRTS(WIDTH_BSV_LRTS);
         CGFloat height = WIDTH_LRTS(HEIGHT_BSV_LRTS);
         _bsView = [[LRTSBuyShowView alloc] initWithFrame:CGRectMake(x_Position, y_Position, width, height)];
+        _bsView.backgroundColor = [UIColor yellowColor];
+        _bsView.layer.cornerRadius = 10.0f;
+        _bsView.layer.masksToBounds = YES;
     }
     return _bsView;
 }
@@ -53,7 +56,33 @@
 
 #pragma mark - Delegate
 
-- (void)closeAlterViewTouchEvent {
+#pragma mark - Public Method
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self.overlayView addSubview:self];
+        [self.overlayView addSubview:self.contentView];
+        [self.contentView addSubview:self.bsView];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self.overlayView addSubview:self];
+        [self.overlayView addSubview:self.contentView];
+        [self.contentView addSubview:self.bsView];
+    }
+    return self;
+}
+
+- (void)show {
+    [self updateViewHierarchy];
+}
+
+- (void)disapper {
     [self.contentView removeFromSuperview];
     [self.overlayView removeFromSuperview];
     
@@ -64,37 +93,11 @@
     [[[[UIApplication sharedApplication] delegate] window] setWindowLevel:UIWindowLevelNormal];
 }
 
-#pragma mark - Public Method
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self configurationParamters];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self configurationParamters];
-    }
-    return self;
-}
-
-- (void)show {
-    [self updateViewHierarchy];
-}
-
 
 #pragma mark - Private Method
 
 - (void)configurationParamters {
-    self.backgroundColor = LRTSCOLORUTILS(0, 0, 0, 0.42);
     
-    [self.overlayView addSubview:self];
-    [self.overlayView addSubview:self.contentView];
-    [self.contentView addSubview:self.bsView];
 }
 
 - (void)updateViewHierarchy {

@@ -9,6 +9,8 @@
 #import "LRTSViewController.h"
 #import "LRTSAlertView.h"
 
+#import "LRTSTicketAlertView.h"
+
 
 @interface LRTSViewController ()
 
@@ -16,6 +18,7 @@
 @property (nonatomic, strong) UIButton *disappearAlterView;
 @property (nonatomic, strong) LRTSAlertView *alertView;
 
+@property (nonatomic, strong) LRTSTicketAlertView *ticketAlertView;
 
 @end
 
@@ -40,7 +43,7 @@
 
 #pragma mark -Init Hierarchy
 - (void)initHierarchy {
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     _showAlertView = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 150, 60)];
     [_showAlertView addTarget:self action:@selector(clickAlertView:) forControlEvents:UIControlEventTouchDown];
@@ -51,6 +54,10 @@
     [_disappearAlterView addTarget:self action:@selector(disappearAlertView) forControlEvents:UIControlEventTouchDown];
     _disappearAlterView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_disappearAlterView];
+    
+//    UIImage *image = [UIImage imageNamed:@"abc.png"];
+    
+    
 }
 
 #pragma mark -Init Paramters
@@ -59,12 +66,15 @@
 }
 
 - (void)clickAlertView:(UIButton *)sender {
-    _alertView = [[LRTSAlertView alloc] init];
-    _alertView.backgroundColor = [UIColor yellowColor];
-    _alertView.bsView.backgroundColor = [UIColor grayColor];
-    [_alertView show];
+//    _alertView = [[LRTSAlertView alloc] init];
+//    _alertView.backgroundColor = [UIColor yellowColor];
+//    _alertView.bsView.backgroundColor = [UIColor grayColor];
+//    [_alertView show];
 
 //    [_alertView disappear];
+    
+    _ticketAlertView = [[LRTSTicketAlertView alloc] init];
+    [_ticketAlertView show];
 }
 
 - (void)disappearAlertView {

@@ -10,10 +10,12 @@
 #endif
 #endif
 
+#import "NSBundle+Categories.h"
 #import "LRTSAlertUtilsUtils.h"
 #import "LRTSAlertView.h"
 #import "LRTSAlertViewContent.h"
 #import "LRTSBuyShowView.h"
+#import "LRTSTicketAlertView.h"
 
 FOUNDATION_EXPORT double LRTSAlertViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char LRTSAlertViewVersionString[];
